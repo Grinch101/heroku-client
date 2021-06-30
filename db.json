@@ -1,0 +1,98 @@
+{
+  "formations": [
+    {
+      "app": {
+        "name": "example",
+        "id": "01234567-89ab-cdef-0123-456789abcdef"
+      },
+      "command": "bundle exec rails server -p $PORT",
+      "created_at": "2012-01-01T12:00:00Z",
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "quantity": 1,
+      "size": "standard-1X",
+      "type": "web",
+      "updated_at": "2012-01-01T12:00:00Z"
+    },
+    {
+      "app": {
+        "name": "example",
+        "id": "01234567-89ab-cdef-0123-456789abcdef"
+      },
+      "command": "bundle exec rails server -p $PORT",
+      "created_at": "2012-01-01T12:00:00Z",
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "quantity": 1,
+      "size": "standard-1X",
+      "type": "web",
+      "updated_at": "2012-01-01T12:00:00Z"
+    },
+    {
+      "app": {
+        "name": "example",
+        "id": "01234567-89ab-cdef-0123-456789abcdef"
+      },
+      "command": "bundle exec rails server -p $PORT",
+      "created_at": "2012-01-01T12:00:00Z",
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "quantity": 1,
+      "size": "standard-1X",
+      "type": "web",
+      "updated_at": "2012-01-01T12:00:00Z"
+    },
+    {
+      "app": {
+        "name": "example",
+        "id": "01234567-89ab-cdef-0123-456789abcdef"
+      },
+      "command": "bundle exec rails server -p $PORT",
+      "created_at": "2012-01-01T12:00:00Z",
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "quantity": 1,
+      "size": "standard-1X",
+      "type": "web",
+      "updated_at": "2012-01-01T12:00:00Z"
+    }
+  ],
+
+
+  "dyno-info1": {
+    "app": {
+      "name": "example",
+      "id": "01234567-89ab-cdef-0123-456789abcdef"
+    },
+    "command": "bundle exec rails server -p $PORT",
+    "created_at": "2012-01-01T12:00:00Z",
+    "id": "01234567-89ab-cdef-0123-456789abcdef",
+    "quantity": 1,
+    "size": "standard-1X",
+    "type": "web",
+    "updated_at": "2012-01-01T12:00:00Z"
+  },
+
+  "profile": {
+    "name": "typicode"
+  },
+
+
+"dynos":
+[
+  {
+    "attach_url": "rendezvous://rendezvous.runtime.heroku.com:5000/{rendezvous-id}",
+    "command": "bash",
+    "created_at": "2012-01-01T12:00:00Z",
+    "id": "01234567-89ab-cdef-0123-456789abcdef",
+    "name": "run.1",
+    "release": {
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "version": 11
+    },
+    "app": {
+      "name": "example",
+      "id": "01234567-89ab-cdef-0123-456789abcdef"
+    },
+    "size": "standard-1X",
+    "state": "up",
+    "type": "run",
+    "updated_at": "2012-01-01T12:00:00Z"
+  }
+]}
