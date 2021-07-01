@@ -7,18 +7,19 @@ import {
 import { useEffect, useState } from "react";
 import Formation from "./Formation";
 import Dynos from "./Dynos";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route  } from "react-router-dom";
 
 function Formations() {
   const [formations, setFormations] = useState([]);
 
-  const fetchAllFormation = async () => {
-    let fml = await getFormationList();
-    fml && setFormations(fml);
-    return;
-  };
+
 
   useEffect(() => {
+    const fetchAllFormation = async () => {
+      let fml = await getFormationList();
+      fml && setFormations(fml);
+      return;
+    };
     fetchAllFormation();
   }, []);
 
@@ -29,8 +30,7 @@ function Formations() {
       //   size : formationToToggle.size,
       quantity: formationToToggle.quantity === 1 ? 0 : 1,
     };
-    const res = await singleFormationUpdate(updatedVals, id);
-
+    await singleFormationUpdate(updatedVals, id);
     setFormations(
       formations.map((formation) => {
         if (formation.id === id) {
@@ -43,20 +43,39 @@ function Formations() {
   };
 
   return (
-    <div>
-      {formations.map((f) => {
+    <>
+      {formations.map((f, index) => {
         return (
           <>
-            <Formation
-              props={f}
-              toggleFormationQuantity={toggleFormationQuantity}
+            <Route
+              path="/"
+              exact
+              render={(props) => (
+                <Formation
+                  key={index}
+                  props={f}
+                  onClick={toggleFormationQuantity}
+                />
+              )}
             />
 
-            <Route path={`/${f.type}`} exact component={Dynos} />
+            {/* <Route
+                path={`/${f.type}`}
+                exact
+                render={(props) => (
+                  <Dynos
+                  key={f.id}
+                    props={f}
+                  />
+                )}
+              /> 
+   */}
+
+            <Route key={index} path={`/${f.type}`} exact component={Dynos} />
           </>
         );
       })}
-    </div>
+    </>
   );
 }
 
