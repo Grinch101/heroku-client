@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+
+# In this project I created a client for the heroku-api project. I used React for this project.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
