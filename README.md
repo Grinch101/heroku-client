@@ -1,5 +1,5 @@
 
-### In this project I created a client for the heroku-api project. I used React for this project.
+### In this project I created a client for the heroku-api.
 
 ## Getting Started with Create React App
 
